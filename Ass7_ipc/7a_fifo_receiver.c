@@ -35,6 +35,33 @@ void analyzeText(const char *text, char *result) {
     sprintf(result, "Characters: %d, Words: %d, Lines: %d", characters, words, lines);
 }
 
+/*
+void analyzeText(const char *text, char *result) {
+    int characters = 0, words = 0, lines = 0;
+    const char *ptr = text;
+    int in_word = 0;
+
+    while (*ptr) {
+        characters++;
+        if (*ptr == ' ' || *ptr == '\n' || *ptr == '\t') {
+            if (in_word) {
+                words++;
+                in_word = 0;
+            }
+            if (*ptr == '\n') lines++;
+        } else {
+            in_word = 1;
+        }
+        ptr++;
+    }
+    if (in_word) words++; // Count the last word if no trailing space
+
+    sprintf(result, "Characters: %d, Words: %d, Lines: %d", characters, words, lines);
+}
+
+
+*/
+
 int main() {
     char input[BUFFER_SIZE];
     char analysis[BUFFER_SIZE];
