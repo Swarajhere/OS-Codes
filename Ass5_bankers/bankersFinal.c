@@ -176,7 +176,35 @@ Available resources after adding new process:
 3 2 1
 The safe sequence is:
 P3 P4 P5 P0 P1 P2
-
+// ---------------------------------------------------------------------------------------
+Enter the initial number of processes: 5
+Enter the number of resources: 3
+Resources allocated:
+0 1 0
+2 0 0
+3 0 2
+2 1 1
+0 0 2
+Max resources required:
+7 5 3
+3 2 2
+9 0 2
+4 2 2
+5 3 3
+Available resources:
+3 3 2
+The safe sequence is:
+P1 P3 P4 P0 P2
+Do you want to add a new process? (y/n): y
+Enter allocated resources for the new process P5:
+1 1 6
+Enter maximum resources required for the new process P5:
+3 2 6
+Available resources after adding new process:
+3 3 2
+The safe sequence is:
+P1 P3 P4 P5 P0 P2
+Do you want to add a new process? (y/n): n
 */
 
 
